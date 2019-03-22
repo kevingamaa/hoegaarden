@@ -1,0 +1,161 @@
+#cover-home {
+    background: url('/assets/desktop/layout/Cover-header-desktop.png') no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    top: 0;
+}
+.cover-content {
+    height: 100vh;
+}
+
+.scroll-down {
+    bottom: 10px;
+    left: 0;
+    z-index: 2;
+}
+
+.about-content {
+    z-index: 2;
+}
+
+.green-house {
+    background: url('/assets/desktop/layout/bg-terceiro-scroll-desktop.png') no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.green-house-content {
+    background: #fff;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    .about-text p {
+        width: 80%;
+    }
+    .about-text {
+        padding: 150px 0px 0 20px ;
+    }
+    .about-content {
+        padding: 200px 0;
+    }
+    .carrosel-float {
+        position: relative;
+        width: 100%;
+    }
+    .green-house {
+        height: auto;
+        margin-top: 0;
+    }
+    .green-house-content { 
+        padding-top: 10px;
+        padding-left: 10px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .green-house-content p{
+        width: 98%
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .about-text p {
+        width: 65%;
+    }
+    .about-text  {
+        padding-left: 50px;
+        padding-top: 150px;
+    }
+    .about-content {
+        padding: 200px 0;
+    }
+    .carrosel-float {
+        position: relative;
+        width: 100%;
+    }
+    .green-house {
+        height: auto;
+        margin-top: 0;
+    }
+    .green-house-content { 
+        padding-top: 20px;
+        padding-left: 20px;
+        margin: 0 auto;
+        width: 86%;
+    }
+    .green-house-content p{
+        width: 90%
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .about-text p {
+        width: 55%;
+    }
+    .about-text  {
+        padding: 150px 0;
+    }
+    .about-content {
+       padding: 0;
+    }
+    
+    .carrosel-float {
+        position: absolute;
+        top: 5%;
+        right: 1%;
+        width: 500px;
+    }
+    .green-house {
+        height: 120vh;
+        margin-top: -50px;
+    }
+    .green-house-content { 
+        padding-top: 50px;
+        padding-left: 50px;
+        margin-left: 10%;
+        width: 60%;
+    }
+    .green-house-content p{
+        width: 70%
+    }
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: block;
+    }
+    .about-content {
+        padding: 0;
+    }
+
+    .carrosel-float {
+        position: absolute;
+        top: 5%;
+        right: 2%;
+        width: 600px;
+    }
+
+    .green-house {
+        height: 120vh;
+        margin-top: -50px;
+    }
+    
+    .green-house-content { 
+        padding-top: 70px;
+        padding-left: 50px;
+        margin-left: 10%;
+        width: 58%;
+    }
+    .green-house-content p{
+        width: 70%
+    }
+}

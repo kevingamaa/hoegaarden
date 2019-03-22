@@ -1,0 +1,8 @@
+{
+  "universal": {
+    "project": "hoegaarden",
+    "skipInstall": false,
+    "directory": ".",
+    "http": true
+  }
+}

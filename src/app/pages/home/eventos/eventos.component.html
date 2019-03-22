@@ -1,0 +1,95 @@
+<section id="events">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h3 class="h1 text-uppercase">Proxímos eventos</h3>
+                    </div>
+                </div>
+                <div class="row events-nav">
+                    <div class="col-md-3">
+                        <div class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                <img src="./assets/desktop/icones/filro-desktop-todos.svg" alt="">
+                                <span>Todos</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                <img src="./assets/desktop/icones/filro-desktop-entretenimento.svg" alt="">
+                                <span>Entretenimento</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                <img src="./assets/desktop/icones/filro-desktop-gastronomia.svg" alt="">
+                                <span>Gastronomia</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 ">
+                        <div class="nav-item">
+                            <a href="javascript:void(0)" class="nav-link">
+                                <img src="./assets/desktop/icones/filtro-desktop-botanica.svg" alt="">
+                                <span>Botanica</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row event-section mb-4">
+                    <div class="col-lg-3 col-md-4 col-sm-12 my-3 event " *ngFor="let event of events">
+                        <a [routerLink]="['/evento', event.id]">
+                            <div class="card shadow-sm">
+                                <img [src]="event.images[0].url" alt="">
+                                <div class="card-body ">
+                                    <h3 class="card-title">{{ event.title }}</h3>
+                                    <span>{{ event.created_at }}</span>
+                                    <p class="card-text mt-3">
+                                        {{ event.description }}
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-12 mt-5 ">
+                        <!-- items being paged -->
+                        <!-- <div *ngFor="let item of page_items">{{ item.name }}</div> -->
+
+                        <nav id="paginator" class="text-center">
+                            <!-- pager -->
+                            <ul *ngIf="pager.pages_qtd && pager.total_pages" class="paginator-list">
+                                <!-- <li [ngClass]="{disabled:pager.current_page === 1}">
+                                    <a (click)="setPage(1)">First</a>
+                                </li> -->
+                                <li [ngClass]="{disabled:pager.current_page === 1}" class="paginator-item">
+                                    <a (click)="setPage(pager.current_page - 1)" class="paginator-link">
+                                        <
+                                    </a>
+                                </li>
+                                <li *ngFor="let page of pager.pages_qtd" class="paginator-item"
+                                    [ngClass]="{active:pager.current_page === page}">
+                                    <a (click)="setPage(page)" class="paginator-link">{{ page }}</a>
+                                </li>
+                                <li [ngClass]="{disabled:pager.current_page === pager.total_pages}" class="paginator-item">
+                                    <a (click)="setPage(pager.current_page + 1)" class="paginator-link">
+                                    >
+                                    </a>
+                                </li>
+                                <!-- <li [ngClass]="{disabled:pager.current_page === pager.total_pages}">
+                                    <a (click)="setPage(pager.total_pages)">Last</a>
+                                </li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

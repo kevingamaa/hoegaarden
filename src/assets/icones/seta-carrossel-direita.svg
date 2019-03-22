@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72.593" height="72.594" viewBox="0 0 72.593 72.594">
+  <defs>
+    <filter id="Retângulo_8" x="0" y="0" width="72.593" height="72.594" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Agrupar_4" data-name="Agrupar 4" transform="translate(-919.407 -1270.703)">
+    <g transform="matrix(1, 0, 0, 1, 919.41, 1270.7)" filter="url(#Retângulo_8)">
+      <rect id="Retângulo_8-2" data-name="Retângulo 8" width="54.593" height="54.593" transform="translate(63.59 60.59) rotate(180)" fill="#fff"/>
+    </g>
+    <path id="Caminho_4" data-name="Caminho 4" d="M15.295,0,0,15.295,15.295,30.589" transform="translate(963.78 1319.269) rotate(180)" fill="none" stroke="#d8ad2c" stroke-width="3"/>
+  </g>
+</svg>

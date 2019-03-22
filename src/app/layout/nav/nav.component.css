@@ -1,0 +1,91 @@
+.navbar {
+    z-index: 999;
+}
+
+.navbar-dark.nav-transparent .navbar-nav .nav-link{
+    color: #FFF 
+}
+
+.nav-transparent.event-page .navbar-nav .nav-item>.nav-link{
+    color: var(--primary); 
+}
+
+
+.navbar-dark .navbar-nav .nav-link, .navbar-main .navbar-nav .nav-item>.nav-link {
+    font-family: "TTNorms-Regular";
+}
+
+@keyframes effectDown {
+    from {
+        transform: translate(0, -100px);
+    }
+}
+
+
+.navbar-toggler.show {
+    transform: rotateZ(90deg);
+    transition: all 1s;
+}
+.navbar-toggler.show:focus {
+    outline: none
+}
+
+
+.effect-down, .collapse.navbar-collapse.show {
+    animation: effectDown 0.5s;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    #main-nav .navbar-brand img {
+        width: 50%;
+    }
+    .nav-transparent {
+        background-color: #FFF;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+        color: var(--primary);
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    #main-nav .navbar-brand img {
+        width: 70%;
+    }
+    .nav-transparent {
+        background-color: #FFF;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: var(--primary);
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   
+    #main-nav .navbar-brand img {
+        width: 100%;
+    }
+    .nav-transparent {
+        background-color: transparent;
+    }
+    
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+    #main-nav .navbar-brand img {
+        width: 100%;
+    }
+
+    .nav-transparent {
+        background-color: transparent;
+    }
+    
+}

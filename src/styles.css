@@ -1,0 +1,115 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+p {
+  color: var(--secondary);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--primary);
+  font-family: "PlantinMTPro-Bold";
+}
+
+.btn-outline-warning {
+  border-width: 2px !important;
+  color: var(--warning) !important;
+  font-family: "TTNorms-Bold"!important;
+}
+
+.bg-main {
+  background-color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: "TTNorms-Regular";
+  src: url("./assets/fonts/gerais/TT-Norms-Regular/TT-Norms-Regular.eot");
+  src: url("./assets/fonts/gerais/TT-Norms-Regular/TT-Norms-Regular.eot?#iefix") format("embedded-opentype"), 
+    url("./assets/fonts/gerais/TT-Norms-Regular/TT-Norms-Regular.svg#TT-Norms-Regular") format("svg"),
+    url("./assets/fonts/gerais/TT-Norms-Regular/TT-Norms-Regular.ttf") format("truetype"), 
+    url("./assets/fonts/gerais/TT-Norms-Regular/TT-Norms-Regular.woff") format("woff"),
+    url("./assets/fonts/gerais/TT-Norms-Regular/TT-Norms-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: "TTNorms-Bold";
+    src: url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.eot");
+    src: url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.eot?#iefix") format("embedded-opentype"), 
+      url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.svg#TT-Norms-Bold") format("svg"),
+      url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.ttf") format("truetype"), 
+      url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.woff") format("woff"),
+      url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+@font-face {
+  font-family: "PlantinMTPro-Bold";
+  src: url("./assets/fonts/titulos/PlantinMTPro-Bold/PlantinMTPro-Bold.eot");
+  src: url("./assets/fonts/titulos/PlantinMTPro-Bold/PlantinMTPro-Bold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/titulos/PlantinMTPro-Bold/PlantinMTPro-Bold.svg#PlantinMTPro-Bold") format("svg"), 
+    url("./assets/fonts/titulos/PlantinMTPro-Bold/PlantinMTPro-Bold.ttf") format("truetype"),
+    url("./assets/fonts/titulos/PlantinMTPro-Bold/PlantinMTPro-Bold.woff") format("woff"), 
+    url("./assets/fonts/titulos/PlantinMTPro-Bold/PlantinMTPro-Bold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+

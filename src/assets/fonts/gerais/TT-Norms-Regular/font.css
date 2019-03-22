@@ -1,0 +1,13 @@
+
+@font-face {
+  font-family: 'TTNorms-Regular';
+  src: url('TT-Norms-Regular.eot');
+  src: url('TT-Norms-Regular.eot?#iefix') format('embedded-opentype'),
+       url('TT-Norms-Regular.svg#TT-Norms-Regular') format('svg'),
+       url('TT-Norms-Regular.ttf') format('truetype'),
+       url('TT-Norms-Regular.woff') format('woff'),
+       url('TT-Norms-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

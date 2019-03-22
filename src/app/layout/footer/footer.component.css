@@ -1,0 +1,24 @@
+footer span {
+    color: var(--secondary);
+}
+
+footer .maps  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+}
+
+footer #mm-rights {
+    background: var(--primary);
+    
+}
+footer #mm-rights span {
+    color: #FFF;
+}
+
+#mm-rights {
+    margin-top: 100px;
+}

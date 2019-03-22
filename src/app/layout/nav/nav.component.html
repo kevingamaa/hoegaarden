@@ -1,0 +1,33 @@
+<div class="position-absolute w-100" style="top:0">
+    <nav [@navEffect]="animation" id="main-nav" class="navbar navbar-expand-lg  navbar-dark " 
+        [ngClass]="navbar">
+        <a class="navbar-brand pl-lg-5 pl-md-3 pl-sm-3  ml-lg-3 ml-md-3 ml-sm-2" routerLink="home">
+            <img src="./assets/desktop/icones/logo-preview-desktop.svg" alt="">
+        </a>
+        <button class="navbar-toggler border-0" 
+            type="button" 
+            (click)="show()" 
+            [ngClass]="showNav"
+            aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./assets/icones/menu-mobile.svg" alt="">
+        </button>
+
+        <div class="collapse navbar-collapse " id="main-nav" [ngClass]="showNav">
+            <ul class="navbar-nav ml-lg-auto text-center text-capitalize mr-lg-5 ">
+                <li class="nav-item px-4" routerLinkActive="active" [routerLink]="['home', 'about']">
+                    <a class="nav-link" href="javascript:void(0)" >A Hoegaarden<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item px-4" [routerLink]="['home', 'green-house']">
+                    <a class="nav-link" href="javascript:void(0)" >A green house</a>
+                </li>
+                <li class="nav-item px-4" [routerLink]="['home', 'events']">
+                    <a class="nav-link" href="javascript:void(0)" >Próximos Eventos</a>
+                </li>
+                <li class="nav-item px-4" [routerLink]="['home', 'locale']">
+                    <a class="nav-link" href="javascript:void(0)" >Localização</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+

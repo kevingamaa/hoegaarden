@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'PlantinMTPro-Regular';
+  src: url('PlantinMTPro-Regular.eot');
+  src: url('PlantinMTPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('PlantinMTPro-Regular.svg#PlantinMTPro-Regular') format('svg'),
+       url('PlantinMTPro-Regular.ttf') format('truetype'),
+       url('PlantinMTPro-Regular.woff') format('woff'),
+       url('PlantinMTPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

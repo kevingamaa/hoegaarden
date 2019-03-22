@@ -1,0 +1,98 @@
+<header id="cover-home" class="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 cover-content">
+                <div class="position-absolute scroll-down w-100 text-center">
+                    <a href="javascript:void(0)" class="" (click)="go('#green-house')">
+                        <img src="./assets/icones/seta-azul-header.svg" alt="" >
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="about" class="mb-5">
+    <div class="container-fluid " >
+        <div class="row pt-4">
+
+            <div class="col-lg-11 col-md-12 mx-auto " style="z-index: 2"> 
+                <div class="row">
+                    <div class="col-lg-6  desktop text-center bottle">
+                        <img src="./assets/desktop/layout/garrafa_desktop.png" alt="">
+                    </div>
+                    <div class="col-lg-6  col-md-12  about-text">
+                        <div class="about-content">
+                            <h1 class="h2 text-uppercase">A Hoegaarden</h1>
+                            <p class="my-3">
+                                Hoegaarden é a cerveja belga witbier mais premiada e famosa do mundo.
+                                Conhecida por sua refrescância e sabor único caracterizada pelo trigo
+                                aromatizado com casca de laranja e sementes de coentro.
+                            </p>
+                            <button type="button" class="btn btn-outline-warning px-5  rounded-0 text-center text-uppercase" >
+                                Comprar agora
+                            </button>
+                        </div>
+                        <img src="./assets/mobile/layout/garrafa_mobile.png" alt="" class="position-absolute mobile"
+                            style="top: 0; right: 0; z-index: -1;">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12 green-house" id="green-house">
+                <div class="green-house-content">
+                    <h2>A green house</h2>
+                    <p>
+                        Inspirado no vilarejo belga onde nasceu a Hoegaarden, o Greenhouse localizado no bairro de Pinheiros
+                        é muito mais que um bar é um convite para as pessoas se desligarem do caos urbano e aproveitarem um
+                        local cercado pela natureza, com 264 plantas de 38 espécies, além de paisagem sonora artística.
+
+                        E um lugar tão especial, merece um cardápio único! Por isso o renomado chef Raphael Despirite traz
+                        um menu no estilo “farm to table”, comida fresca e saudável, produtos orgânicos e de pequenos
+                        produtores, tudo isso com referências belgas e baixo desperdício.
+
+                        Venha conhecer o primeiro bar proprietário da Hoegaarden no mundo e provar a melhor witbier belga em
+                        São Paulo!
+                    </p>
+                    <button type="button" class="btn btn-outline-warning  rounded-0 my-4 text-center text-uppercase" style="font-size:20px">
+                        Ver Proxímos eventos
+                    </button>
+
+                        
+                </div>
+                <div class="carrosel-float">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="./assets/desktop/layout/carrossel-um-desktop.png"
+                                    alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./assets/desktop/layout/carrossel-um-desktop.png"
+                                    alt="Second slide">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="./assets/desktop/layout/carrossel-um-desktop.png"
+                                    alt="Third slide">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel" style="opacity: 1" role="button"
+                            data-slide="prev">
+                            <img src="./assets/icones/seta-carrrossel-esquerda.svg" alt="">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" style="opacity: 1" role="button"
+                            data-slide="next">
+                            <img src="./assets/icones/seta-carrossel-direita.svg" alt="">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            
+
+            </div>
+        </div>
+    </div>
+</section>
+<app-eventos></app-eventos>
+<app-footer></app-footer>
