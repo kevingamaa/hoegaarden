@@ -3,13 +3,13 @@
     padding: 0 90px;
 }
 
-
 #event .event-data {
     font-size: 22px;
     color: var(--secondary);
 }
 
 #event .event-data img {
+    width: 60px;
     padding-right: 5px;
 }
 

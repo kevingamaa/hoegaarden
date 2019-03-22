@@ -16,9 +16,26 @@ h5 {
   font-family: "PlantinMTPro-Bold";
 }
 
+span {
+  font-family: "TTNorms-Regular";
+  font-weight: 600
+  
+}
+
 .btn-outline-warning {
   border-width: 2px !important;
   color: var(--warning) !important;
+}
+
+.btn-warning {
+  color: #FFF!important;
+}
+
+.btn-light {
+  color: var(--warning) !important;
+}
+
+.btn-light, .btn-warning, .btn-outline-warning  {
   font-family: "TTNorms-Bold"!important;
 }
 

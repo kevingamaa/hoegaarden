@@ -58,7 +58,7 @@ export class EventosComponent implements OnInit {
     setPage(page: number) {
         // get pager object from service
         this.pager = this.pagerService.getPager(15, page, 8);
-        console.log(this.pager)
+        console.log(this.pager);
         // get current page of items
         this.pagedItems = this.allItems.slice(this.pager.startIndex, this.pager.endIndex + 1);
     }

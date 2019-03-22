@@ -1,0 +1,79 @@
+#question {
+    background: url('/assets/desktop/layout/bg-azul-desktop.png') no-repeat center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    position: absolute;
+}
+
+#question .question-content {
+    padding: 100px;
+}
+
+#question .question-content  h2{
+    color: #FFF;
+}
+
+#question .question-content  h4{
+    color: var(--warning);
+}
+
+#question .btn-question {
+    padding: 12px 41px !important;
+}
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+    #question {
+        height: 110vh;
+    }
+    #question .question-content {
+        padding: 5px;
+    }
+    #question .question-content  h2{
+        font-size: 24px;
+     }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+    #question {
+        height: 110vh;
+    }
+    #question .question-content {
+        padding: 20px;
+    }
+    #question .question-content  h2{
+        font-size: 30px;
+     }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    #question {
+        height: 120vh;
+    }
+    #question .question-content {
+        padding: 90px;
+    }
+    #question .question-content  h2{
+        font-size: 40px;
+     }
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #question {
+        height: 124vh;
+    }
+    #question .question-content {
+        padding: 100px;
+    }
+    #question .question-content  h2{
+       font-size: 42px;
+    }
+}
