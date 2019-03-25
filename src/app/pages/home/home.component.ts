@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-home',
@@ -8,9 +9,10 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-    constructor(private route: ActivatedRoute) { }
+    constructor(private route: ActivatedRoute, private titleService: Title) { }
 
     ngOnInit() {
+        this.titleService.setTitle('Hoegaarden Greenhouse');
         this.route.params.subscribe(param => {
             if (param.content !== undefined) {
                 this.go(`#${param.content}`);

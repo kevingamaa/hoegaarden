@@ -6,7 +6,6 @@ footer .maps  {
     position: absolute;
     top: 0;
     left: 0;
-    
     width: 100%;
     height: 100%;
 }
@@ -21,4 +20,77 @@ footer #mm-rights span {
 
 #mm-rights {
     margin-top: 100px;
+}
+
+
+/* Medium devices (landscape tablets, 768px and down) */
+@media only screen and (max-width: 768px) {
+   
+    footer .maps-div {
+        height: 300px;
+    }
+    #locale .locale-title {
+        font-size: 30px;
+    }
+    #mm-rights .rights  {
+        text-align: center
+    }
+    #mm-rights  .dev-rights{
+        font-size: 13px;
+        text-align: center;
+        margin-top: 10px;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    footer .maps-div {
+        height: 300px;
+    }
+    #locale .locale-title {
+        font-size: 35px;
+    }
+    #mm-rights .rights  {
+        text-align: center
+    }
+    #mm-rights  .dev-rights {
+        font-size: 15px;
+        text-align: center;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    footer .maps  {
+        height: 100%;
+    }
+    #locale .locale-title {
+        font-size: 40px;
+    }
+    #mm-rights .rights  {
+        text-align: left
+    }
+    #mm-rights  .dev-rights {
+        font-size: 15px;
+        text-align: right;
+    }
+} 
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    footer .maps  {
+        height: 100%;
+    }
+    #locale .locale-title {
+        font-size: 42px;
+    }
+    #mm-rights .rights  {
+        text-align: left
+    }
+    #mm-rights  .dev-rights {
+        font-size: 15px;
+        text-align: right;
+    }
+    
 }

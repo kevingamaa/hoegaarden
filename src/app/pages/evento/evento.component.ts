@@ -1,4 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
     selector: 'app-evento',
@@ -7,9 +8,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 export class EventoComponent implements OnInit, OnDestroy {
     public location = false;
-    constructor() { }
+    constructor( private titleService: Title) { }
 
     ngOnInit() {
+        this.titleService.setTitle('Evento - Greenhouse');
         document.getElementById('main-nav').classList.add('event-page');
 
         window.scroll({       // 1

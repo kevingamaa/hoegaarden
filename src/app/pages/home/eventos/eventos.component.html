@@ -3,36 +3,40 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-md-12 text-center">
+                    <div class="col-md-12 text-center mb-5">
                         <h3 class="h1 text-uppercase">Proxímos eventos</h3>
                     </div>
                 </div>
-                <div class="row " >
+                <div class="row ">
                     <div class="col-md-12">
-                        <ul class="events-nav">
-                            <li >
-                                <a href="javascript:void(0)" >
+                        <ul class="events-nav " [ngClass]="navDevice">
+                            <li class="todos" [ngClass]="activeEvents.todos ? 'active': ''"
+                                (click)="changeCategory('todos')">
+                                <a href="javascript:void(0)">
                                     <!-- <img src="./assets/desktop/icones/todos-juntos-amarelo.svg" alt=""> -->
                                 </a>
                             </li>
-                            <li >
-                                <a href="javascript:void(0)" >
+                            <li class="entretenimento" [ngClass]="activeEvents.entretenimento ? 'active': ''"
+                                (click)="changeCategory('entretenimento')">
+                                <a href="javascript:void(0)">
                                     <!-- <img src="./assets/desktop/icones/entretenimento-juntos-cinza.svg" alt=""> -->
                                 </a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0)" >
+                            <li class="gastronomia" [ngClass]="activeEvents.gastronomia ? 'active': ''"
+                                (click)="changeCategory('gastronomia')">
+                                <a href="javascript:void(0)">
                                     <!-- <img src="./assets/desktop/icones/gastronomia-juntos-cinza.svg" alt=""> -->
                                 </a>
                             </li>
-                            <li >
-                                <a href="javascript:void(0)" >
+                            <li class="botanica" [ngClass]="activeEvents.botanica ? 'active': ''"
+                                (click)="changeCategory('botanica')">
+                                <a href="javascript:void(0)">
                                     <!-- <img src="./assets/desktop/icones/botanica-juntos-cinza.svg" alt=""> -->
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    
+
                 </div>
 
                 <div class="row event-section mb-4">
@@ -44,7 +48,27 @@
                                     <h3 class="card-title">{{ event.title }}</h3>
                                     <span>{{ event.created_at }}</span>
                                     <p class="card-text mt-3">
-                                        {{ event.description }}
+                                        Em sintonia com o Brunch Weekend, todos os sábados do mês de Abril, teremos mini
+                                        aulas de itens que compõem um excelente Brunch.
+                                        O curso será ministrado por Rafael Despirite e os ingressos já estão disponíveis
+                                        para compra no link abaixo. Esperamos por você!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-12 my-3 event " *ngFor="let event of events">
+                        <a [routerLink]="['/evento', event.id]">
+                            <div class="card shadow-sm">
+                                <img [src]="event.images[0].url" alt="">
+                                <div class="card-body ">
+                                    <h3 class="card-title">{{ event.title }}</h3>
+                                    <span>{{ event.created_at }}</span>
+                                    <p class="card-text mt-3">
+                                        Em sintonia com o Brunch Weekend, todos os sábados do mês de Abril, teremos mini
+                                        aulas de itens que compõem um excelente Brunch.
+                                        O curso será ministrado por Rafael Despirite e os ingressos já estão disponíveis
+                                        para compra no link abaixo. Esperamos por você!
                                     </p>
                                 </div>
                             </div>
@@ -62,16 +86,14 @@
                                 </li> -->
                                 <li [ngClass]="{disabled:pager.current_page === 1}" class="paginator-item">
                                     <a (click)="setPage(pager.current_page - 1)" class="paginator-link">
-                                        <
-                                    </a>
+                                        < </a> </li> <li *ngFor="let page of pager.pages_qtd" class="paginator-item"
+                                            [ngClass]="{active:pager.current_page === page}">
+                                            <a (click)="setPage(page)" class="paginator-link">{{ page }}</a>
                                 </li>
-                                <li *ngFor="let page of pager.pages_qtd" class="paginator-item"
-                                    [ngClass]="{active:pager.current_page === page}">
-                                    <a (click)="setPage(page)" class="paginator-link">{{ page }}</a>
-                                </li>
-                                <li [ngClass]="{disabled:pager.current_page === pager.total_pages}" class="paginator-item">
+                                <li [ngClass]="{disabled:pager.current_page === pager.total_pages}"
+                                    class="paginator-item">
                                     <a (click)="setPage(pager.current_page + 1)" class="paginator-link">
-                                    >
+                                        >
                                     </a>
                                 </li>
                                 <!-- <li [ngClass]="{disabled:pager.current_page === pager.total_pages}">

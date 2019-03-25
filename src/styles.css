@@ -4,8 +4,20 @@ html,
 body {
   height: 100%;
 }
+body::-webkit-scrollbar-track {
+  background-color: var(--primary);
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  background: var(--primary);
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--warning);
+}
 p {
   color: var(--secondary);
+  font-family: "TTNorms-Light"!important;
+  font-size: 18px;
 }
 h1,
 h2,
@@ -17,9 +29,8 @@ h5 {
 }
 
 span {
-  font-family: "TTNorms-Regular";
-  font-weight: 600
-  
+  font-family: "TTNorms-Medium";
+  /* font-weight: 600 */
 }
 
 .btn-outline-warning {
@@ -115,8 +126,32 @@ span {
       url("./assets/fonts/gerais/TT-Norms-Bold/TT-Norms-Bold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
-  }
+}
   
+
+@font-face {
+  font-family: "TTNorms-Medium";
+  src: url("./assets/fonts/gerais/TT-Norms-Medium/TT-Norms-Medium.eot");
+  src: url("./assets/fonts/gerais/TT-Norms-Medium/TT-Norms-Medium.eot?#iefix") format("embedded-opentype"), 
+    url("./assets/fonts/gerais/TT-Norms-Medium/TT-Norms-Medium.svg#TT-Norms-Medium") format("svg"),
+    url("./assets/fonts/gerais/TT-Norms-Medium/TT-Norms-Medium.ttf") format("truetype"), 
+    url("./assets/fonts/gerais/TT-Norms-Medium/TT-Norms-Medium.woff") format("woff"),
+    url("./assets/fonts/gerais/TT-Norms-Medium/TT-Norms-Medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "TTNorms-Light";
+  src: url("./assets/fonts/gerais/TT-Light/TT-Norms-Light.eot");
+  src: url("./assets/fonts/gerais/TT-Light/TT-Norms-Light.eot?#iefix") format("embedded-opentype"), 
+    url("./assets/fonts/gerais/TT-Light/TT-Norms-Light.svg#TT-Norms-Light") format("svg"),
+    url("./assets/fonts/gerais/TT-Light/TT-Norms-Light.ttf") format("truetype"), 
+    url("./assets/fonts/gerais/TT-Light/TT-Norms-Light.woff") format("woff"),
+    url("./assets/fonts/gerais/TT-Light/TT-Norms-Light.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: "PlantinMTPro-Bold";

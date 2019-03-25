@@ -22,6 +22,11 @@
     padding: 12px 41px !important;
 }
 
+.btn-light:hover {
+    background-color: var(--warning) !important;
+    color: #fff !important;
+}
+
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
     #question {
