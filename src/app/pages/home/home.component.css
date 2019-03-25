@@ -33,6 +33,12 @@
     background: #fff;
 }
 
+
+#carousel .carousel-inner .carousel-item>img {
+    height: 501px;
+    width: 100%;
+    object-fit: cover;
+}
 /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
     .cover-text {

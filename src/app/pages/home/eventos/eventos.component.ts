@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 import { PagerService } from '../../../services/pager.service';
+import { PostService } from '../../../services/post.service';
 
 @Component({
     selector: 'app-eventos',
     templateUrl: './eventos.component.html',
     styleUrls: ['./eventos.component.css'],
-    providers: [PagerService]
+    providers: [PagerService, PostService]
 })
 export class EventosComponent implements OnInit {
     public events = [
@@ -57,9 +58,13 @@ export class EventosComponent implements OnInit {
 
     public navDevice: string;
 
-    constructor(public breakpointObserver: BreakpointObserver, private pagerService: PagerService) { }
+    constructor(
+        public breakpointObserver: BreakpointObserver,
+        private pagerService: PagerService,
+    ) { }
 
     ngOnInit() {
+        // console.log(this.postService.get());
         this.mediaMatch();
         // console.log(this.pagerService);
         this.setPage(1);
