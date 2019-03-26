@@ -18,7 +18,7 @@ export class EventoComponent implements OnInit, OnDestroy {
         private route: ActivatedRoute) { }
 
     ngOnInit() {
-        this.titleService.setTitle('Evento - Greenhouse');
+
         document.getElementById('main-nav').classList.add('event-page');
 
         window.scroll({       // 1
@@ -37,6 +37,7 @@ export class EventoComponent implements OnInit, OnDestroy {
                 // console.log(event);
                 this.event = event;
                 this.event.images = JSON.parse(event.images);
+                this.titleService.setTitle(`${event.title} - Greenhouse`);
             });
         });
     }

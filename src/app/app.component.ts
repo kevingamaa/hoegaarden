@@ -9,10 +9,10 @@ export class AppComponent implements OnInit {
     title = 'hoegaarden';
     public questionAnswer: boolean;
     ngOnInit(): void {
-        if (localStorage.getItem('answered') === 'yes') {
-            this.questionAnswer = true;
-        } else {
-        }
+        // if (localStorage.getItem('answered') === 'yes') {
+        //     this.questionAnswer = true;
+        // } else {
+        // }
     }
     public can(answer): void {
         if (answer) {
