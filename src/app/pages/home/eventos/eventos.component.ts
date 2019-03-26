@@ -3,6 +3,7 @@ import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/l
 import { PagerService } from '../../../services/pager.service';
 import { PostService } from '../../../services/post.service';
 
+
 @Component({
     selector: 'app-eventos',
     templateUrl: './eventos.component.html',
