@@ -68,13 +68,13 @@ export class EventosComponent implements OnInit {
             this.requisition(null, page );
             // console.log('foi no elese');
         }
-        window.scroll({       // 1
-            top: document
-                .querySelector('#events')
-                .offsetTop,       // 2
-            left: 0,
-            behavior: 'smooth'// 3
-        });
+        // window.scroll({       // 1
+        //     top: document
+        //     .querySelector('#events')
+        //     .offsetTop,       // 2
+        //     left: 0,
+        //     behavior: 'smooth'// 3
+        // });
         // console.log(this.activeEvents)
     }
 
