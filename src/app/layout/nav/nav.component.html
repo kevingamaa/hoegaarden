@@ -15,16 +15,16 @@
         <div class="collapse navbar-collapse " id="main-nav" [ngClass]="showNav">
             <ul class="navbar-nav ml-lg-auto text-center text-capitalize mr-lg-5 ">
                 <li class="nav-item px-4" routerLinkActive="active" [routerLink]="['home', 'about']">
-                    <a class="nav-link" href="javascript:void(0)" >A Hoegaarden<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="javascript:void(0)" (click)="show()" >A Hoegaarden<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item px-4" [routerLink]="['home', 'green-house']">
-                    <a class="nav-link" href="javascript:void(0)" >A green house</a>
+                <li class="nav-item px-4" [routerLink]="['home', 'green-house']" >
+                    <a class="nav-link" href="javascript:void(0)" (click)="show()" >A green house</a>
                 </li>
                 <li class="nav-item px-4" [routerLink]="['home', 'events']">
-                    <a class="nav-link" href="javascript:void(0)" >Próximos Eventos</a>
+                    <a class="nav-link" href="javascript:void(0)" (click)="show()">Próximos Eventos</a>
                 </li>
                 <li class="nav-item px-4" [routerLink]="['home', 'locale']">
-                    <a class="nav-link" href="javascript:void(0)" >Localização</a>
+                    <a class="nav-link" href="javascript:void(0)" (click)="show()">Localização</a>
                 </li>
             </ul>
         </div>

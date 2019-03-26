@@ -3,10 +3,6 @@
   /* height: 100vh; */
 }
 
-
-
-
-
 .event-section  .event  a{
     text-decoration: none;
 }
@@ -15,7 +11,7 @@
 }
 
 .event-section .event .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .event-section .event img {
@@ -23,13 +19,19 @@
     width: 100%;
     object-fit: cover;
 }
-
+.event-section .event .card-text, .event-section .event .card-title  {
+    max-width: 40ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 .event-section .event .card-title {
+    font-size: 25px;
     margin-bottom: 0;
 }
 
 .event-section .event span {
-    font-size: 24px;
+    font-size: 22px;
     color: var(--secondary);
 }
 
@@ -102,9 +104,6 @@
     cursor: pointer;
 }
 
-.events-nav.mobile-nav li {
-    /* background-size: ; */
-}
 
 .events-nav.mobile-nav .todos:hover, .events-nav.mobile-nav .todos.active {
     background-image: url(/assets/icones/nav-events/filtro-todos-mobile-amarelo.png) ;
