@@ -21,7 +21,7 @@ export class CmsService {
     constructor(private http: HttpClient) { }
 
     get(filter?, quantidade?, page?): Observable<any> {
-        let url = `${this.apiUrl}/cases/listar?quantidade=${quantidade ? quantidade : 8}&page=${page ? page : 1}`;
+        let url = `${this.apiUrl}/eventos/listar?quantidade=${quantidade ? quantidade : 8}&page=${page ? page : 1}`;
 
         // tslint:disable-next-line: no-unused-expression
         filter ? url = `${url}&filter=${ JSON.stringify(filter) }` : '' ;
@@ -35,7 +35,7 @@ export class CmsService {
 
 
     find(id): Observable<any> {
-        return  this.http.get<any>(`${this.apiUrl}/cases/detalhes?id=[${id}]`, this.httpOptions)
+        return  this.http.get<any>(`${this.apiUrl}/eventos/detalhes?id=[${id}]`, this.httpOptions)
             .pipe(
                 retry(10)
             );
