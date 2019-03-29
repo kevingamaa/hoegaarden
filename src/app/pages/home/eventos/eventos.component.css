@@ -7,11 +7,14 @@
     text-decoration: none;
 }
 .event-section .event .card {
-    transition:transform 0.5s;
+    transition:all 1s;
 }
 
 .event-section .event .card:hover {
     transform: scale(1.05);
+    transition: all 100ms;
+    box-shadow: -1px 21px 25px -12px rgba(0,0,0,0.75)!important;
+    
 }
 
 .event-section .event img {
