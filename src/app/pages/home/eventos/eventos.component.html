@@ -76,7 +76,7 @@
                                     </a> 
                                 </li> 
                                 <li *ngFor="let page of pager.pages_qtd" class="paginator-item"
-                                            [ngClass]="{active:pager.current_page === page}" (click)="changePage(page)" (click)="setPage(page)">
+                                            [ngClass]="{active:pager.current_page === page, disabled:pager.current_page === page }" (click)="changePage(page)" (click)="setPage(page)">
                                     <a   class="paginator-link">{{ page }}</a>
                                 </li>
                                 <li [ngClass]="{disabled:pager.current_page === pager.total_pages}"
