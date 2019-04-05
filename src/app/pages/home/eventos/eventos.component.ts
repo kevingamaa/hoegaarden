@@ -86,6 +86,7 @@ export class EventosComponent implements OnInit {
             this.events = response.data;
             this.events.map((event: any ) => {
                 event.images = JSON.parse(event.images);
+                event.thumbs = JSON.parse(event.thumbs);
             });
             // console.log(response);
             this.setPage(response.current_page, response.total);

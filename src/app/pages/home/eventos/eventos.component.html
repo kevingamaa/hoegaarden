@@ -64,7 +64,8 @@
 
                         <nav id="paginator" class="text-center"  >
                             <!-- pager -->
-                            <ul *ngIf="pager.pages_qtd && pager.total_pages" class="paginator-list">
+                            <ul *ngIf="pager.pages_qtd && pager.total_pages" class="paginator-list" 
+                            [ngStyle]="{'padding-inline-start': '0px'}">
                                 <!-- <li [ngClass]="{disabled:pager.current_page === 1}">
                                     <a (click)="setPage(1)">First</a>
                                 </li> -->
